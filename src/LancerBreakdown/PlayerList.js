@@ -11,7 +11,7 @@ export default function PlayerList(props) {
             }>
             <rect
                 x={props.curSelected === player.id ? 30 : 20}
-                y={50 * player.id + 10}
+                y={50 * (player.id+1) + 10}
                 stroke="black"
                 id="cardBox"
                 height="50px"
@@ -19,7 +19,7 @@ export default function PlayerList(props) {
                 fill="lightgrey"
 
             ></rect>
-            <text x={props.curSelected === player.id ? 40 : 30} y={50 * player.id + 40}>
+            <text x={props.curSelected === player.id ? 40 : 30} y={50 * (player.id+1) + 40}>
                 {player.name}
             </text>
         </g>
