@@ -1,0 +1,88 @@
+[
+    {
+        "id": 1,
+        "name": "Fox",
+        "desc": "Thingy",
+        "Pilot": {
+            "name": "Alaria",
+            "callsign": "Hurricane",
+            "background": "I'm too lazy to write lorem in right now, so this is what you're getting instead.",
+            "skillTriggers": [
+                {
+                    "skillName": "Survival",
+                    "skillLevel": 3
+                },
+                {
+                    "skillName": "Assault",
+                    "skillLevel": 1
+                },
+                {
+                    "skillName": "Word around town",
+                    "skillLevel": 2
+                }
+            ]
+        },
+        "Mech": {
+            "name": "Shredder",
+            "frame": "Hydra",
+            "background": "I'm too lazy to write lorem in right now, so this is what you're getting instead.",
+            "weapons": [
+                {
+                    "Name": "Hand Cannon",
+                    "MountPoint": "Hand",
+                    "Damage": "2d6",
+                    "DamageType": "Kinetic"
+                },
+                {
+                    "Name": "Drone Swarm",
+                    "MountPoint": "Body",
+                    "Damage": "8d6",
+                    "DamageType": "Energy"
+                }
+            ]
+        }
+    },
+    {
+        "id": 2,
+        "name": "Carson",
+        "desc": "Thingy",
+        "Pilot": {
+            "name": "Alaria",
+            "callsign": "Hurricane",
+            "background": "I'm too lazy to write lorem in right now, so this is what you're getting instead.",
+            "skillTriggers": [
+                {
+                    "skillName": "Survival",
+                    "skillLevel": 3
+                },
+                {
+                    "skillName": "Assault",
+                    "skillLevel": 1
+                },
+                {
+                    "skillName": "Word around town",
+                    "skillLevel": 2
+                }
+            ]
+        },
+        "Mech": {
+            "name": "Shredder",
+            "frame": "Hydra",
+            "background": "I'm too lazy to write lorem in right now, so this is what you're getting instead.",
+            "weapons": [
+                {
+                    "Name": "Hand Cannon",
+                    "MountPoint": "Hand",
+                    "Damage": "2d6",
+                    "DamageType": "Kinetic"
+                },
+                {
+                    "Name": "Drone Swarm",
+                    "MountPoint": "Body",
+                    "Damage": "8d6",
+                    "DamageType": "Energy"
+                }
+            ]
+        }
+    }
+]
