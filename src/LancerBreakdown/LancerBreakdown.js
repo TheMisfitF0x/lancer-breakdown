@@ -5,7 +5,7 @@ import PlayerList from "./PlayerList";
 export default function LancerBreakdown(props) {
 
     const [players, setPlayers] = useState([]);
-    const [curSelected, setCurSelected] = useState(0);
+    const [curSelected, setCurSelected] = useState({});
 
     useEffect(() => {
         fetch("data/data.json")
@@ -15,16 +15,27 @@ export default function LancerBreakdown(props) {
                 setPlayers(data);
                 console.log("Loading Data");       
             });
-    }, []);
+    },[]);
 
     console.log(players);
 
     return (
         <div>
             <svg height="600px" width="850px">
-            <InfoWrapper players={players} curSelected={curSelected}/>
-                <PlayerList players={players} curSelected={curSelected} onPlayerSelected={setCurSelected} />
+                <InfoWrapper curPlayer={curSelected}/>
+                <PlayerList 
+                players={players} 
+                curSelected={curSelected} 
+                onPlayerSelected={(id) => {playerSelected(id);}} 
+                />
                 
             </svg>
         </div >);
+
+        function playerSelected(id)
+        {
+            const playerFound = players.find(player => player.id ===id);
+            console.log(playerFound);
+            setCurSelected(playerFound);
+        }
 }
