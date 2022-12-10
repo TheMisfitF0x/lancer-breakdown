@@ -12,15 +12,19 @@ export default function LancerBreakdown(props) {
             .then((response) => response.json())
             .then((data) => {
                 //TODO - set data into property
-                setPlayers(data);       
+                setPlayers(data);
+                console.log("Loading Data");       
             });
     }, []);
-    console.log(players[curSelected]);
+
+    console.log(players);
+
     return (
         <div>
             <svg height="600px" width="850px">
+            <InfoWrapper players={players} curSelected={curSelected}/>
                 <PlayerList players={players} curSelected={curSelected} onPlayerSelected={setCurSelected} />
-                <InfoWrapper curPlayer={players[curSelected]} />
+                
             </svg>
         </div >);
 }

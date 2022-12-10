@@ -4,7 +4,7 @@
         "name": "Fox",
         "desc": "Thingy",
         "Pilot": {
-            "name": "Alaria",
+            "name": "Alari",
             "callsign": "Hurricane",
             "background": "I'm too lazy to write lorem in right now, so this is what you're getting instead.",
             "skillTriggers": [
